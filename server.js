@@ -4,7 +4,17 @@ const nameRoute = require('./routes/nameRoute');
 
 
 app.get('/', (req, res) => {
-    res.send('Welcome to my Express web server!');
+    res.send( `
+    <html>
+        <head>
+            <title>Home Page</title>
+        </head>
+        <body>
+            <h1>Welcome to my Express web server!</h1>
+            <p>Click <a href="/name">here</a> to go to the /name directory.</p>
+        </body>
+    </html>
+`);
   });
   app.use('/', nameRoute);
 
