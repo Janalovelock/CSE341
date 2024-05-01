@@ -2,9 +2,9 @@ const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
 const mongodb = require('./db/connect');
-const nameRoute = require('./routes/nameRoute');
 const PORT = process.env.PORT || 3000;
 
+app.use(bodyParser.json());
 app.get('/', (req, res) => {
     res.send( `
     <html>
@@ -19,8 +19,8 @@ app.get('/', (req, res) => {
 `);
 });
 
-app.use('/', require('./routes'));
-app.use(bodyParser.json());
+app.use('/', require('./routes/index'));
+
 app.use((req, res, next) => {
     res.setHeader('Access-Control-Allow-Origin', '*');
     next();
