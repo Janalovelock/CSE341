@@ -1,0 +1,28 @@
+[   {
+        "contact1":{
+        "firstName": "Aaron",
+        "lastName": "Lovelock",
+        "email": "aaronlovelock6@gmail.com",
+        "favoriteColor": "Blue",
+        "birthday": "10/02/1993"
+        }
+    },
+    {
+        "contact2":{
+        "firstName": "Audrey",
+        "lastName": "Lovelock",
+        "email": "audreylovelock6@gmail.com",
+        "favoriteColor": "Purple",
+        "birthday": "06/05/2019"
+        }
+    },
+    {
+        "contact3":{
+        "firstName": "Hillary",
+        "lastName": "Young",
+        "email": "hyoung@besttherapy.com",
+        "favoriteColor": "Green",
+        "birthday": "03/19/1993"
+        }
+    }
+]
