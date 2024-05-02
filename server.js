@@ -12,8 +12,10 @@ app.get('/', (req, res) => {
             <title>Home Page</title>
         </head>
         <body>
-            <h1>Welcome to Jana Lovelock's Express web server!</h1>
+            <h1>Welcome to Jana Lovelock's Page!</h1>
             <p>Click <a href="/name">here</a> to go to the /name directory.</p>
+            <p>Click <a href="/contacts">here</a> to go to the /contacts directory.</p>
+
         </body>
     </html>
 `);
