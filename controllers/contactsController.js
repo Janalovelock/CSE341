@@ -1,3 +1,5 @@
+/* jshint esversion: 8 */
+
 const mongodb = require('../db/connect');
 const ObjectId = require('mongodb').ObjectId;
 

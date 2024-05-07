@@ -1,3 +1,4 @@
+/* jshint esversion: 6 */
 const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
@@ -21,7 +22,7 @@ app.get('/', (req, res) => {
 `);
 });
 
-app.use('/', require('./routes/index'));
+app.use('/', require('./routes'));
 
 app.use((req, res, next) => {
     res.setHeader('Access-Control-Allow-Origin', '*');
