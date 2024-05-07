@@ -1,13 +1,13 @@
 /* jshint esversion: 6 */
-const express = require('express');
+const express = require("express");
 const app = express();
-const bodyParser = require('body-parser');
-const mongodb = require('./db/connect');
+const bodyParser = require("body-parser");
+const mongodb = require("./db/connect");
 const PORT = process.env.PORT || 3000;
 
 app.use(bodyParser.json());
-app.get('/', (req, res) => {
-    res.send( `
+app.get("/", (req, res) => {
+  res.send(`
     <html>
         <head>
             <title>Home Page</title>
@@ -22,19 +22,19 @@ app.get('/', (req, res) => {
 `);
 });
 
-app.use('/', require('./routes'));
+app.use("/", require("./routes"));
 
 app.use((req, res, next) => {
-    res.setHeader('Access-Control-Allow-Origin', '*');
-    next();
+  res.setHeader("Access-Control-Allow-Origin", "*");
+  next();
 });
 
 mongodb.initDb((err, mongodb) => {
-    if (err) {
-        console.log(err);
-    } else {
-        app.listen(PORT, () => {
-            console.log(`connected to DB and listening on ${PORT}`);
-        });
-    }
+  if (err) {
+    console.log(err);
+  } else {
+    app.listen(PORT, () => {
+      console.log(`connected to DB and listening on ${PORT}`);
+    });
+  }
 });
