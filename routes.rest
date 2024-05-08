@@ -1,17 +1,47 @@
-
+//get all
 GET http://localhost:3000/contacts
 ###
+//get one
 GET http://localhost:3000/contacts/663291fc1569183fda25118a
 ###
-GET http://localhost:3000/contacts/663298128c4f5ef1e4c4e8ae
+//create
+POST http://localhost:3000/contacts
+Content-Type: application/json
+{
+  "firstName": "Tammy",
+  "lastName": "Green",
+  "email": "tammyg@gmail.com",
+  "favoriteColor": "green",
+  "birthday": "03/25/1988"
+}
 ###
-GET http://localhost:3000/contacts/663298128c4f5ef1e4c4e8af
+//update
+PUT http://localhost:3000/contacts/663bf2a4700321c607f353be
+Content-Type: application/json
+{
+  "firstName": "Tammy",
+  "lastName": "Green",
+  "email": "tammyg@gmail.com",
+  "favoriteColor": "Yellow",
+  "birthday": "03/25/1988"
+}
 ###
+//delete
+DELETE http://localhost:3000/contacts/663bf2a4700321c607f353be
+
+
+// ********* RENDER LINKS ********* //
+
+
+###
+//get all
 GET https://cse341-ezpk.onrender.com/contacts
 ###
+//get one
 GET https://cse341-ezpk.onrender.com/contacts/663298128c4f5ef1e4c4e8ad
 ###
-POST http://localhost:3000/contacts
+//create
+POST https://cse341-ezpk.onrender.com/contacts
 Content-Type: application/json
 
 {
@@ -23,6 +53,7 @@ Content-Type: application/json
 }
 
 ###
+//update
 PUT http://localhost:3000/contacts/663bf2a4700321c607f353be
 Content-Type: application/json
 
@@ -34,4 +65,5 @@ Content-Type: application/json
   "birthday": "03/25/1988"
 }
 ###
+//delete
 DELETE http://localhost:3000/contacts/663bf2a4700321c607f353be
