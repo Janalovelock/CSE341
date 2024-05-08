@@ -54,7 +54,7 @@ Content-Type: application/json
 
 ###
 //update
-PUT http://localhost:3000/contacts/663bf2a4700321c607f353be
+PUT https://cse341-ezpk.onrender.com/contacts/663bf877d908ec7a02c2040b
 Content-Type: application/json
 
 {
@@ -66,4 +66,4 @@ Content-Type: application/json
 }
 ###
 //delete
-DELETE http://localhost:3000/contacts/663bf2a4700321c607f353be
+DELETE https://cse341-ezpk.onrender.com/contacts/663bf877d908ec7a02c2040b
