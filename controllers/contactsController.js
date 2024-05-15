@@ -76,7 +76,7 @@ const update = async (req, res, next) => {
       .collection("contacts")
       .updateOne(
         { _id: contactId },
-        { $set: { firstName, lastName, email, favoriteColor, birthday } }
+        { $set: { firstName, lastName, email, favoriteColor, birthday } },
       );
 
     if (result.modifiedCount === 0) {
