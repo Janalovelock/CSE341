@@ -8,9 +8,16 @@ const PORT = process.env.PORT || 3000;
 // Middleware to parse JSON bodies
 app.use(bodyParser.json());
 
+
 // Logging middleware to log incoming requests
 app.use((req, res, next) => {
-  console.log(`${req.method} ${req.url}`); // Log the request method and URL
+  res.setHeader('Access-Control-Allow-Origin', '*');
+  res.setHeader(
+    'Access-Control-Allow-Headers', 
+    'Origin, X-Requested-with, Content-Type, Accept, Z-Key'
+  );
+  res.setHeader('Content-Type', 'application/json'); 
+  res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
   next(); // Call next middleware or route handler
 });
 
