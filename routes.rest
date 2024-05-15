@@ -54,7 +54,7 @@ Content-Type: application/json
 
 ###
 //update
-PUT https://cse341-ezpk.onrender.com/contacts/663bf877d908ec7a02c2040b
+PUT https://cse341-ezpk.onrender.com/contacts/663bf8df4d3c773b71187fd7
 Content-Type: application/json
 
 {
@@ -66,4 +66,4 @@ Content-Type: application/json
 }
 ###
 //delete
-DELETE https://cse341-ezpk.onrender.com/contacts/663bf877d908ec7a02c2040b
+DELETE https://cse341-ezpk.onrender.com/contacts/663bf8df4d3c773b71187fd7
