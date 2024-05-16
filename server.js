@@ -50,11 +50,11 @@ app.get("/", (req, res) => {
 // Mount the routes
 app.use("/", require("./routes"));
 
-// CORS middleware
-app.use((req, res, next) => {
-  res.setHeader("Access-Control-Allow-Origin", "*");
-  next();
-});
+// // CORS middleware
+// app.use((req, res, next) => {
+//   res.setHeader("Access-Control-Allow-Origin", "*");
+//   next();
+// });
 
 // Initialize MongoDB connection
 mongodb.initDb((err, mongodb) => {
