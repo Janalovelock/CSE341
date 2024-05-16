@@ -1,11 +1,11 @@
 //get all
-GET http://localhost:3000/contacts
+GET http://localhost:4000/contacts
 ###
 //get one
-GET http://localhost:3000/contacts/663291fc1569183fda25118a
+GET http://localhost:4000/contacts/663291fc1569183fda25118a
 ###
 //create
-POST http://localhost:3000/contacts
+POST http://localhost:4000/contacts
 Content-Type: application/json
 {
   "firstName": "Tammy",
@@ -16,7 +16,7 @@ Content-Type: application/json
 }
 ###
 //update
-PUT http://localhost:3000/contacts/663bf2a4700321c607f353be
+PUT http://localhost:4000/contacts/663bf2a4700321c607f353be
 Content-Type: application/json
 {
   "firstName": "Tammy",
@@ -27,7 +27,7 @@ Content-Type: application/json
 }
 ###
 //delete
-DELETE http://localhost:3000/contacts/663bf2a4700321c607f353be
+DELETE http://localhost:4000/contacts/663bf2a4700321c607f353be
 
 
 // ********* RENDER LINKS ********* //
